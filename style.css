@@ -16,6 +16,8 @@ body{
     background-color: black;
     padding: 20px;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .header1__title{
@@ -62,6 +64,29 @@ body{
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    background-color: black;
+}
+
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+
+.notification{
+    border: black solid 1px;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    display: none;
+}
+
+.mylearning:hover .notification{
+    display: block;
+}
+
+.header3 .mylearning__notification{
+    color: black;
 }
 
 .categories p{
@@ -83,6 +108,19 @@ body{
     justify-content: center ;
     background-color: #94C2E5;
     padding: 50px;
+    gap: 20px;
+    align-items: center;
+}
+
+.sale-offer{
+    border: black solid 2px;
+    padding: 20px;
+    height: fit-content;
+    margin: 10px;
+}
+
+.sale-offer h2{
+    margin-bottom: 10px;
 }
 
 .recommend{
@@ -104,6 +142,7 @@ body{
 .course-card img{
     width: 100%;
     height: 60%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .topic-container{
